@@ -1,12 +1,12 @@
 package main
 
 import (
+	"io"
+	"os"
+	"log"
+	"flag"
 	"bytes"
 	"compress/flate"
-	"flag"
-	"io"
-	"log"
-	"os"
 )
 
 func main() {
