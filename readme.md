@@ -39,7 +39,7 @@ This project is a command-line tool for processing and compressing video frames.
 Run the tool with the following command-line arguments:
 
 ```bash
-"video.rgb24" | ./video_tool --width <video_width> --height <video_height>
+/video_tool -w <video_width> -h <video_height> -v <video_file>
 ```
 
 ### Arguments:
