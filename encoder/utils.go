@@ -7,6 +7,7 @@ import (
 	"bytes"
 	"compress/flate"
 )
+
 func ReadFrames(width, height int) [][]byte {
 	frames := make([][]byte, 0)
 	for {
