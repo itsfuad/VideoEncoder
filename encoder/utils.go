@@ -1,11 +1,11 @@
 package encoder
 
 import (
-	"os"
-	"io"
-	"log"
 	"bytes"
 	"compress/flate"
+	"io"
+	"log"
+	"os"
 )
 
 func ReadFrames(width, height int) [][]byte {

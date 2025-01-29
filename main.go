@@ -1,23 +1,23 @@
 package main
 
 import (
-	"os"
-	"log"
 	"flag"
+	"log"
+	"os"
 	"video-encoder/encoder"
 )
 
 func main() {
-    var width, height int
-    var videoPath string
+	var width, height int
+	var videoPath string
 	flag.Usage = func() {
 		log.Printf("Usage: %s [options]\n", os.Args[0])
 		flag.PrintDefaults()
 	}
-    flag.IntVar(&width, "w", 384, "video width")
-    flag.IntVar(&height, "h", 216, "video height")
-    flag.StringVar(&videoPath, "v", "", "path to video file")
-    flag.Parse()
+	flag.IntVar(&width, "w", 384, "video width")
+	flag.IntVar(&height, "h", 216, "video height")
+	flag.StringVar(&videoPath, "v", "", "path to video file")
+	flag.Parse()
 
 	if videoPath != "" {
 		file, err := os.Open(videoPath)
